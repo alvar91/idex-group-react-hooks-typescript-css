@@ -1,0 +1,71 @@
+.user__months {
+  display: grid;
+  grid-auto-flow: row;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  grid-template-rows: 16px;
+  grid-template-columns: repeat(12, 63px);
+  align-self: center;
+}
+
+.day {
+  display: grid;
+  grid-auto-flow: column;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+}
+
+.day__item {
+  width: 8px;
+  height: 2px;
+  background-color: #f6f6f6;
+}
+
+.day__item--rest {
+  background-color: var(--rest-color);
+}
+
+.day__item--vacation {
+  background-color: var(--vacation-color);
+}
+
+.day__item--sickLeave {
+  background-color: var(--sickLeave-color);
+}
+
+.day__item--timeOff {
+  background-color: var(--timeOff-color);
+}
+
+.row-start-1 {
+  grid-row-start: 1;
+}
+
+.row-start-2 {
+  grid-row-start: 2;
+}
+
+.row-start-3 {
+  grid-row-start: 3;
+}
+
+.row-start-4 {
+  grid-row-start: 4;
+}
+
+.row-start-5 {
+  grid-row-start: 5;
+}
+
+.row-start-6 {
+  grid-row-start: 6;
+}
+
+.row-start-7 {
+  grid-row-start: 7;
+}

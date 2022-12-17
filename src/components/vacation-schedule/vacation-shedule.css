@@ -1,0 +1,85 @@
+.main {
+  background-color: #fff;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 80px;
+}
+
+.schedule {
+  overflow-x: auto;
+}
+
+.schedule__header {
+  display: flex;
+  justify-content: space-between;
+  padding: 17px 0 10px 20px;
+  width: var(--content-width);
+  background-color: var(--main-bg);
+}
+
+.schedule__main {
+  width: var(--content-width);
+}
+
+.schedule__months {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 75px 33px auto;
+  gap: 27px;
+
+  padding: 8px 0;
+  padding-left: 20px;
+  font-size: 10px;
+  color: var(--schedule-text);
+  line-height: 12px;
+  text-align: center;
+  background-color: var(--main-bg);
+
+  list-style: none;
+}
+
+.schedule__months-list {
+  display: grid;
+  grid-auto-flow: row;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  grid-template-rows: 16px;
+  grid-template-columns: repeat(12, 63px);
+  align-self: center;
+}
+
+.schedule__title {
+  margin: 0;
+  font-weight: 400;
+  font-size: 18px;
+  color: #2d2e2e;
+  line-height: 24px;
+}
+
+.pagination__button {
+  border: none;
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  background: url("./pagination-prev.svg") no-repeat center;
+  cursor: pointer;
+}
+
+.pagination__year {
+  margin: 0 6px;
+  font-size: 18px;
+  color: var(--schedule-text);
+  line-height: 24px;
+  vertical-align: middle;
+  font-weight: 400;
+}
+
+.pagination__button--next {
+  transform: rotate(180deg);
+}
+
+.container {
+  position: absolute;
+}

@@ -1,0 +1,72 @@
+.card {
+  position: absolute;
+  z-index: 100;
+  min-width: 345px;
+  background: var(--main-bg-light);
+  box-shadow: 0 0 4px 0 rgb(107 107 107 / 50%);
+  border-radius: 4px;
+  padding: 16px 16px 22px;
+}
+
+.card__person {
+  display: flex;
+  margin-bottom: 13px;
+}
+
+.card__photo {
+  width: 54px;
+  border-radius: 27px;
+  margin-right: 16px;
+}
+
+.card__image {
+  border-radius: 50%;
+}
+
+.card__name {
+  width: 90px;
+  font-size: 14px;
+  color: var(--main-color);
+  font-weight: bold;
+}
+
+.card__info {
+  padding-left: 20px;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.card__dates {
+  position: relative;
+  color: var(--main-color);
+}
+
+.card__dates::before {
+  position: absolute;
+  content: "";
+  width: 12px;
+  height: 16px;
+  top: 0;
+  left: -20px;
+}
+.card__dates::before {
+  background: var(--rest-color);
+}
+
+.card__dates--vacation::before {
+  background: var(--vacation-color);
+}
+
+.card__dates--sickLeave::before {
+  background: var(--sickLeave-color);
+}
+
+.card__dates--timeOff::before {
+  background: var(--timeOff-color);
+}
+
+.card__comment {
+  color: #aeaeae;
+  line-height: 18px;
+  margin-top: 2px;
+}

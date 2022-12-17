@@ -1,0 +1,49 @@
+@import url("./vendor/normalize.css");
+@import url("./vendor/fonts.css");
+
+:root {
+  --main-color: #000;
+  --main-dark: #556080;
+  --main-bg: #f7f7f7;
+  --main-bg-light: #fff;
+  --app-bg: #393a3f;
+  --grey: #cacaca;
+  --schedule-text: #232323;
+
+  --rest-color: #eaf9ff;
+  --vacation-color: #1ebeb4;
+  --sickLeave-color: #f16953;
+  --timeOff-color: #fcc659;
+
+  --content-width: 938px;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  min-width: 320px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-weight: 500;
+  line-height: 20px;
+  font-size: 14px;
+  color: var(--main-color);
+  background-color: var(--main-bg);
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

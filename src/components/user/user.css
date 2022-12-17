@@ -1,0 +1,44 @@
+.user {
+  display: grid;
+  grid-template-columns: 100px 33px auto;
+  gap: 24px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--main-bg);
+}
+
+.user__info {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.user__avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.user__name {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  color: var(--schedule-text);
+  line-height: 12px;
+}
+
+.user__text {
+  max-width: 60px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.user__away {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  color: var(--schedule-text);
+  line-height: 12px;
+}

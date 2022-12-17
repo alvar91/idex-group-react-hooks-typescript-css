@@ -1,0 +1,12 @@
+.app {
+  max-width: 1078px;
+  margin-top: 81px;
+  background-color: var(--app-bg);
+  padding-left: 100px;
+}
+
+@media screen and (max-width: 600px) {
+  .app {
+    padding-left: 0;
+  }
+}
